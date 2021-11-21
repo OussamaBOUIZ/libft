@@ -6,7 +6,7 @@
 #    By: obouizga <obouizga@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/09 12:58:15 by obouizga          #+#    #+#              #
-#    Updated: 2021/11/21 15:29:31 by obouizga         ###   ########.fr        #
+#    Updated: 2021/11/21 17:55:54 by obouizga         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ all : $(NAME)
 $(NAME) : $(OBJF) 
 
 %.o: %.c
-	$(CC) $(CFLAGS) $< -c 
+	$(CC) $(CFLAGS) -c $< 
 	ar rc $(NAME) $@
 
 bonus: $(B_OB)
@@ -40,7 +40,7 @@ clean:
 	
 fclean : clean
 	$(RM) $(NAME)
-re : fclean all 
+re : fclean all bonus
 
 
 
