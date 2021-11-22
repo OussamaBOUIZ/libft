@@ -6,7 +6,7 @@
 /*   By: obouizga <obouizga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 10:49:05 by obouizga          #+#    #+#             */
-/*   Updated: 2021/11/13 13:07:34 by obouizga         ###   ########.fr       */
+/*   Updated: 2021/11/22 11:59:23 by obouizga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	len;
 	size_t	i;
 
-	if (!s)
+	if (!s || !f)
 		return (0);
 	i = 0;
 	str = (char *)s;

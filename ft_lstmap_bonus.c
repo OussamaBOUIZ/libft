@@ -6,7 +6,7 @@
 /*   By: obouizga <obouizga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 22:07:58 by obouizga          #+#    #+#             */
-/*   Updated: 2021/11/20 11:03:26 by obouizga         ###   ########.fr       */
+/*   Updated: 2021/11/22 09:52:38 by obouizga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*curr;
 	t_list	*first;
 
-	if (!lst)
+	if (!lst || !f)
 		return (NULL);
 	first = ft_lstnew(f(lst->content));
 	head = first;

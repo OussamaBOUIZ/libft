@@ -6,7 +6,7 @@
 /*   By: obouizga <obouizga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 18:02:48 by obouizga          #+#    #+#             */
-/*   Updated: 2021/11/09 14:43:05 by obouizga         ###   ########.fr       */
+/*   Updated: 2021/11/22 10:54:14 by obouizga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 126)
+	char	cc;
+
+	cc = (char)c;
+	if (cc >= 32 && cc <= 126)
 		return (1);
 	return (0);
 }

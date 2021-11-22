@@ -6,7 +6,7 @@
 /*   By: obouizga <obouizga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:40:32 by obouizga          #+#    #+#             */
-/*   Updated: 2021/11/20 12:05:59 by obouizga         ###   ########.fr       */
+/*   Updated: 2021/11/22 10:53:20 by obouizga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 int	ft_isascii(int c)
 {
-	if (c >= 0 && c <= 127)
+	char	cc;
+
+	cc = (char)c;
+	if (cc >= 0 && cc <= 127)
 		return (1);
 	return (0);
 }

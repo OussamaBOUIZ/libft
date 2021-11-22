@@ -6,7 +6,7 @@
 /*   By: obouizga <obouizga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 17:46:31 by obouizga          #+#    #+#             */
-/*   Updated: 2021/11/17 16:03:43 by obouizga         ###   ########.fr       */
+/*   Updated: 2021/11/22 11:25:21 by obouizga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strnstr(const char *haystak, const char *needle, size_t len)
 	while (hay[i] && i < len)
 	{
 		j = 0;
-		while (ned[j])
+		while (ned[j] && hay[i + j])
 		{
 			if (hay[i + j] == ned[j] && i + j < len)
 				j++;

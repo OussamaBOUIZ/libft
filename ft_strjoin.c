@@ -6,7 +6,7 @@
 /*   By: obouizga <obouizga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 14:29:58 by obouizga          #+#    #+#             */
-/*   Updated: 2021/11/19 14:16:55 by obouizga         ###   ########.fr       */
+/*   Updated: 2021/11/22 11:58:41 by obouizga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,10 +53,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*nw_str;
 	size_t	total_l;
 
+	if (!s1 || !s2)
+		return (0);
 	prefix = (char *)s1;
 	suffix = (char *)s2;
-	if (!prefix || !suffix)
-		return (0);
 	total_l = ft_strlen(prefix) + ft_strlen(suffix);
 	nw_str = malloc(sizeof(char) * total_l + 1);
 	if (!nw_str)
