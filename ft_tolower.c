@@ -6,7 +6,7 @@
 /*   By: obouizga <obouizga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 15:44:43 by obouizga          #+#    #+#             */
-/*   Updated: 2021/11/22 10:54:43 by obouizga         ###   ########.fr       */
+/*   Updated: 2021/11/23 08:54:39 by obouizga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	char	cc;
-
-	cc = (char)c;
-	if (cc >= 'A' && cc <= 'Z')
-		cc += 32;
-	return (cc);
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
+	return (c);
 }

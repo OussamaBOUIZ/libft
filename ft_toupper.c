@@ -6,7 +6,7 @@
 /*   By: obouizga <obouizga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 15:11:21 by obouizga          #+#    #+#             */
-/*   Updated: 2021/11/22 10:55:06 by obouizga         ###   ########.fr       */
+/*   Updated: 2021/11/23 08:54:52 by obouizga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int	ft_toupper(int c)
 {
-	char	cc;
-
-	cc = (char)c;
-	if (cc >= 'a' && cc <= 'z')
-		cc -= 32;
-	return (cc);
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
+	return (c);
 }

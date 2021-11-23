@@ -6,23 +6,11 @@
 /*   By: obouizga <obouizga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 14:29:58 by obouizga          #+#    #+#             */
-/*   Updated: 2021/11/22 11:58:41 by obouizga         ###   ########.fr       */
+/*   Updated: 2021/11/23 09:07:05 by obouizga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// static char	*alloc(char *prefix, char *suffix)
-// {
-// 	size_t	total_l;
-// 	char	*allocated;
-
-// 	total_l = ft_strlen(prefix) + ft_strlen(suffix);
-// 	allocated = malloc(sizeof(char) * total_l + 1);
-// 	if (!allocated)
-// 		return (NULL);
-// 	return (allocated);
-// }
 
 static void	join_str(char *prefix, char *suffix, char *nw_str)
 {

@@ -6,7 +6,7 @@
 /*   By: obouizga <obouizga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 15:54:32 by obouizga          #+#    #+#             */
-/*   Updated: 2021/11/22 10:52:00 by obouizga         ###   ########.fr       */
+/*   Updated: 2021/11/23 08:52:43 by obouizga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,11 @@
 
 int	ft_isalnum(int c)
 {
-	unsigned char	cc;
-
-	cc = (unsigned char)c;
-	if (cc >= 'a' && cc <= 'z')
+	if (c >= 'a' && c <= 'z')
 		return (1);
-	if (cc >= 'A' && cc <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 		return (1);
-	if (cc >= '0' && cc <= '9')
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }

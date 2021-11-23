@@ -6,7 +6,7 @@
 /*   By: obouizga <obouizga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 15:54:10 by obouizga          #+#    #+#             */
-/*   Updated: 2021/11/22 09:30:02 by obouizga         ###   ########.fr       */
+/*   Updated: 2021/11/23 09:08:05 by obouizga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <fcntl.h>
 
 typedef struct s_list
 {
